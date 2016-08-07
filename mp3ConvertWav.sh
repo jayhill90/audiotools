@@ -7,14 +7,14 @@
 clear # Clear the Screen
 #Setup ANSI Color Codes
 RED='\033[0;31m'
-DEFAULT='[0m'
+DEFAULT='\e[0m'
  # Get Directory To Convert
-echo -e "${RED}		Please input the directory that you wish to convert:\e[0m" 
+echo -e "${RED}		Please input the directory that you wish to convert: $DEFAULT" 
 read convert
 # If filenames contain whitespace, replace with _ 
 for f in $convert/* ; do mv "$f" "${f// /_}" 2>/dev/null ; done
       # Get Directory to Put Converted Files In 
-echo -e "${RED}	Please input the directory that you wish to place the converted files:\e[0m"
+echo -e "${RED}	Please input the directory that you wish to place the converted files: $DEFAULT"
 read converted
 mkdir -p $converted
       # Begin Conversion
