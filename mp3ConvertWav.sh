@@ -1,7 +1,7 @@
 #!/bin/bash
 ###################################
 # Wav to MP3 Bash Script v1.0     #
-# By: Jordan Hill                 #
+# By: defc0re                     #
 # August 2016                     #
 ###################################
 clear # Clear the Screen
