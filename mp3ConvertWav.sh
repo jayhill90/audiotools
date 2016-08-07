@@ -22,7 +22,7 @@ echo "		Please wait..."
 echo "		Converting $convert"
 #Convert direcotry of wavs into mp3s
 for i in $convert/*.wav 
-	do ffmpeg -loglevel 0 -i "$i" -c:a libmp3lame -b:a 320k "$i.mp3" #encode files
+	do ffmpeg -loglevel 0 -i "$i" -c:a libmp3lame -b:a 320k "$i.mp3" #encode files with no ffmpeg output
 	mv $convert/*.mp3 $converted #Move files into converted folder
 done
 #File names end up becoming .wav.mp3 so we need to strip the .wav part.
