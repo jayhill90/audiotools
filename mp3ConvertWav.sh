@@ -29,10 +29,8 @@ done
 for file in $converted/*.wav.mp3
 	 do mv "$file" "${file//.wav}" #Strip .wav from filename
 done
-sleep 2
 echo "		All files have been converted!"  # All Files Converted
 echo "		Files have been placed in $converted"
 #Show all files in $converted directory
 ls -lah $converted 
-sleep 5
-echo "Goodbye.
+echo "Goodbye."
